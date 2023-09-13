@@ -1,0 +1,20 @@
+
+<div class="home-container">
+    <div class="content">
+        <h2 class="header">Welcome to  Angular Home Page</h2>
+        <img class="image"
+            src="https://img.freepik.com/free-photo/online-web-design_53876-95309.jpg?w=1380&t=st=1694586848~exp=1694587448~hmac=70e3637ac6561cde881868d44602ee530c814b29ddad90648c989006c74e9043"
+            alt="Home" />
+        
+        <div class="card-body">
+            <h4 class="card-title">Students <span style="color: red;">{{ details }}</span></h4>
+            <p class="card-text"><input type="text" (input)="onStudentNameChange($event)"
+                    placeholder="Enter student's name..."></p>
+            <h5 *ngIf="studentName" class="card-title">Student's Name: <span style="color: rgb(175, 47, 189);">{{
+                    studentName }}</span></h5>
+            <a href="#" class="btn btn-primary" routerLink="student">Go to student mark</a>
+        </div>
+    </div>
+</div>
+
+
